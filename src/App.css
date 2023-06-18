@@ -3,13 +3,26 @@
 }
 body {
   background-color: rgb(170, 158, 158);
-  background-image: url('../img/bckgimg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 10px;
   color: beige;
 }
-img{
-  max-width: 100%;
-  margin: 50px;
+
+img.bg {
+  min-height: 100%;
+  min-width: 1024px;
+
+  width: 100%;
+  height: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+  img.bg {
+    left: 50%;
+    margin-left: -512px;
+  }
 }
